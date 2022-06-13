@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    width: 100vw;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gal{
+    width: 300px;
+}
+
+.gal:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
