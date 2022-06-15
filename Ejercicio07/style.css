@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div{
+    display: flex;
+}
+
+/*Aqui empiezar los estilos del main-container*/
+
+.side-bar{
+    width: 450px;
+    height: 100vh;
+    background-color: #f2d184;
+    padding: 40px;
+}
+
+.side-bar header{
+    padding: 40px 40px 30px;
+    text-align: left;
+}
+
+.side-bar header .logo-db{
+    display: block;
+    margin: 30px;
+    width: 90px;
+    height: auto;
+}
+
+header{
+    display: block;
+    position: relative;
+}
+
+h1{
+    font-size: 25px;
+    color: #866118;
+}
+
+.logo-db{
+    display: block;
+    width: 90px;
+    height: 22px;
+    color: #f2d184;
+}
+
+/*Aqui termina los estilos del main-container*/
+
+
+/*Aqui empiezan los estilos del container*/
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+} /*usar margin para moverlo arriba a la derecha*/
+
+p{
+    vertical-align: baseline;
+}
+
+/* Aqui empiezan los estilos que estan fuera del form */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+    margin: auto;
+}
+
+h2{
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    margin: 0 0 40px;
+}
+
+.btn-google{
+    background-color: #1a73b1;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btn-google:hover{
+    opacity: 0.7;
+}
+
+.btn-google picture{
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google picture img{
+    width: 75%;
+}
+
+.btn-google span{
+    color: #fff;
+    padding: 15px;
+}
+
+.btn-twitter{
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btn-twitter:hover{
+    background-color: #ddd;
+}
+
+.btn-google picture{
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-twitter picture img{
+    width: 75%;
+}
+
+
+hr.separator{
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #922c2c;
+    color: #6e6d7a;
+    text-align: center;
+    width: 700px;
+}
+
+hr.separator::after{
+    content: "O";
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    padding: 0 16px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+/* Aqui termina los estilos que estan fuera del form */
+
+.section-inputs-group{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap:15px;
+    padding: 12px;
+}
+
+.section-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:15px;
+    padding: 12px 0;
+}
+
+label span{
+    font-weight: 700;
+}
+
+label input{
+    margin-right: 8px;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 12px 0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: baclground-color 0.3s ease-in-out border 0.2s box-shadow 0.2s;
+}
+
+.section-inputs label input{
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+
+}
+
+label input:hover{
+    background-color: #fff;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #b93f907c;
+}
+
+label input:focus{
+    background-color: #fff;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #b93f907c;
+}
+
+.checkbox-label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-label input[type=chechbox]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.checkbox-label span{
+    font-weight: 400;
+}
+
+.submit-btn{
+    background-color: #ea4c89;
+    color: #fff;
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    opacity: 0.75;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #0d0c22;
+}
